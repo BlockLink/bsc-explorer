@@ -15,3 +15,29 @@ Currently available full-featured block explorers (Etherscan, Etherchain, Blockc
 [![License: GPL v3.0](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
+
+
+## How To Install
+
+#### Install PostgreSQL
+
+#### Install Rust
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+#### Install Erlang and Elixir
+
+```
+wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
+sudo apt-get update
+sudo apt-get install esl-erlang
+sudo apt-get install elixir
+```
+
+#### Install deps
+
+```
+mix do deps.get, local.rebar --force, deps.compile, compile
+```
