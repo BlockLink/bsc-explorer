@@ -19,6 +19,8 @@ This project is licensed under the GNU General Public License v3.0. See the [LIC
 
 ## How To Install
 
+Follow the instructions: `https://docs.blockscout.com/for-developers/manual-deployment`
+
 #### Install PostgreSQL
 
 #### Install Rust
