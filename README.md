@@ -41,5 +41,24 @@ sudo apt-get install elixir
 #### Install deps
 
 ```
+apt-get git curl
+apt-get install build-essential autoconf make cmake libssl-dev libtool
+
 mix do deps.get, local.rebar --force, deps.compile, compile
 ```
+
+#### Install npm and webpack
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+nvm i 12
+nvm use 12
+npm i
+
+npm install -g webpack
+```
+
+
