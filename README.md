@@ -26,12 +26,14 @@ Follow the instructions: `https://docs.blockscout.com/for-developers/manual-depl
 #### Install Rust
 
 ```
+sudo apt-get install curl screen
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 #### Install Erlang and Elixir
 
 ```
+sudo apt-get install gnupg gnupg1 gnupg2
 wget https://packages.erlang-solutions.com/erlang-solutions_2.0_all.deb && sudo dpkg -i erlang-solutions_2.0_all.deb
 sudo apt-get update
 sudo apt-get install esl-erlang
